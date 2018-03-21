@@ -1,6 +1,8 @@
 import React from 'react';
-import HorizontalNavList from '../components/HorizontalNavList';
+import HorizontalNavList from './HorizontalNavList';
 import PropTypes from 'prop-types';
+import Alert from './Alert';
+import IconView from './IconView';
 
 const Display = props => {
 
@@ -28,9 +30,23 @@ const Display = props => {
         </div>
       );
       break;
+    case "Alert":
+      components = (
+        <div>
+          <Alert />
+        </div>
+      );
+      break;
+    case "Icon":
+      components = (
+        <div>
+          <IconView />
+        </div>
+      );
+      break;
 
     default:
-      console.error("NO MATCH");
+      alert("NO MATCH!!");
   }
   return components;
 }

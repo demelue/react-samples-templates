@@ -14,6 +14,8 @@ class App extends Component {
           <Route exact path={routes.NAVIGATION} component={() => <Display template="Navigation"/>} />
           <Route exact path={routes.MISC} component={() => <Display template="Misc"/>} />
           <Route exact path={routes.FORMS} component={() => <Display template="Forms"/>} />
+          <Route exact path={routes.ALERT} component={() => <Display template="Alert"/>} />
+          <Route exact path={routes.ICON} component={() => <Display template="Icon"/>} />
         </div>
       </BrowserRouter >
     );
